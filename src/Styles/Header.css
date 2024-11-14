@@ -1,0 +1,386 @@
+
+.label{
+    font-family: Arial, Helvetica, sans-serif;  
+    letter-spacing: 0.2px; 
+}
+
+.mainlogo , .menu-icon  {
+  cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.wallet-icon{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+.menu-icon{
+  display: none;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  .nav-btns{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .bi-chevron-down{
+    padding: 5px;
+  }
+
+  .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+  .inner-nav{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  }
+  .outer-nav{
+    padding: 0px 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 1.5px 1.5px 0px lightgray;
+    
+  }
+  .inner-side-nav{
+    display: flex;
+    align-items: center;
+
+    gap: 2vw;
+  }
+  
+  .bi-brightness-high>div{
+    display: none;
+  }
+  .lang-nav{
+    display: flex;
+    gap: 2vw;
+  }
+  .projects-page{
+    height: 90vh;
+   
+    overflow: hidden;
+}
+  .login-signup{
+    display: flex;
+    gap: 0.6vw;
+    align-items: center;
+  }
+  .log-in, .sign-up{
+    background-color: transparent;
+    border: none;
+    padding: 11px 3.5rem;
+    border: 1.5px solid black;
+    text-align: center;
+  }
+  
+ 
+  
+  .sign-up{
+    background-color: #4CFDCB;
+  }
+
+  .down-hover:hover{
+    border-bottom: 4px solid #4CFDCB ;
+  }
+  .down-hover{
+    height: 73.6px;
+  }
+  .mobile-nav-main{
+    animation : top2down 0.6s 1 ; 
+  }
+
+  .all-projects{
+    height: 20vh;
+    padding: 3vh 4vw;
+   
+}
+  @keyframes top2down {
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
+
+  @media (min-width:840px) and (max-width:950px) {
+    .inner-nav{
+      display: flex;
+      gap: 10px;
+    }
+    .log-in, .sign-up{
+      padding: 9px 1.5rem;
+    }
+    .poppins-semibold{
+      font-size: 13px;
+    }
+    .mainlogo ,.menu-icon ,.wallet-icon{
+      width: 30px;
+    height: 30px;
+    }
+    
+  }
+  @media (min-width:750px) and (max-width:840px) {
+    .inner-nav{
+      display: flex;
+      gap: 10px;
+    }
+    .log-in, .sign-up{
+      padding: 9px 1rem;
+    }
+    .poppins-semibold{
+      font-size: 14px !important;
+    }
+    .mainlogo ,.menu-icon ,.wallet-icon{
+      width: 30px;
+    height: 30px;
+    }
+    .nav-links{
+      gap: 10px;
+    }
+
+  }
+
+  @media (min-width:450px) and (max-width:750px) {
+    .all-projects{
+      padding: 3vw 0px;
+    }
+    .project-item{
+      margin: 10px 10px 10px 0px ;
+    }
+    .down-hover{
+      height: 50px ;
+    }
+    .mobile-nav-bar{
+      margin-left: 10px;
+    }
+    .mobile-lang-nav{
+      
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .nav-links{
+      
+      display: none;
+    }
+    .empty-div{
+      height: 0px;
+      display: none;
+    }
+    .project-item{
+      border: none;
+      width: 200px;
+    }
+    .outer-nav{
+      padding: 10px;
+    }
+    .log-in, .sign-up{
+      padding: 7px 2rem;
+    }
+    .lang-nav{
+      display: none;
+      gap: 10px;
+    }
+    .menu-icon{
+      display: revert;
+    }
+    .log-in, .sign-up{
+      border: 1px solid black;
+    }
+    .mainlogo , .menu-icon  {
+      cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .wallet-icon{
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+    }
+    .poppins-semibold{
+      font-weight: 500;
+      color: grey;
+    }
+
+  }
+
+  @media (min-width:340px) and (max-width:450px) {
+    .mobile-lang-nav{
+      
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .poppins-semibold{
+      font-weight: 500;
+      color: grey;
+    }
+    .down-hover{
+      height: 50px ;
+    }
+    .mainlogo , .menu-icon  {  
+        width: 28px;
+        height: 28px;
+      
+    }
+    .wallet-icon{
+      width: 28px;
+      height: 28px;
+    }
+    .mobile-nav-links{
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-links{
+      display: none;
+    }
+  
+    .outer-nav{
+      padding: 10px;
+    }
+    .log-in, .sign-up{
+      padding: 10px 2rem;
+    }
+    .lang-nav{
+      margin-left: 10px;
+      display: none;
+    }
+    .menu-icon{
+      display: revert;
+    }
+    .log-in, .sign-up{
+      padding: 5px 15px;
+      border: 1px solid black;
+    }
+    .projects-page{
+      height: auto;
+    }
+    .all-projects{
+      height: auto;
+    }
+    .empty-div{
+      display: none;
+    }
+    .github-link{
+      font-size: 14px;
+      color: lightgrey;
+    }
+    
+  }
+@media (max-width:340px) {
+  .mobile-lang-nav{
+      
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .poppins-semibold{
+    font-weight: 500;
+    color: grey;
+  }
+  .down-hover{
+    height: 50px ;
+  }
+  .mobile-nav-links{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainlogo , .menu-icon  {
+    width: 27px;
+    height: 27px;
+  
+}
+.projects-page{
+  height: auto;
+}
+.wallet-icon{
+  
+  width: 27px;
+  height: 27px;
+}
+.nav-links{
+  display: none;
+}
+.outer-nav{
+  padding: 10px;
+}
+.log-in, .sign-up{
+  padding: 7px 2rem;
+}
+.lang-nav{
+  padding: 10px;
+  display: none;
+}
+.menu-icon{
+  display: revert;
+}
+.login-signup{
+  display: none;
+}
+.all-projects{
+  height: auto;
+}
+.empty-div{
+  display: none;
+}
+}
