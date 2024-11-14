@@ -2,8 +2,8 @@
   "name": "catalogue",
   "version": "1.0.0",
   "scripts": {
-    "build": "parcel build src/app.html --out-dir dist",  // Build command
-    "dev": "parcel src/app.html"  // Development server command
+    "build": "parcel build src/app.html --out-dir dist",
+    "dev": "parcel src/app.html"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.1.0",
