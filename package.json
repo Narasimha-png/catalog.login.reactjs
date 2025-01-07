@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "build": "parcel build src/app.html --out-dir dist",
-    "dev": "parcel src/app.html"
+    "dev": "parcel src/app.html" ,
+    "predeploy": "npx parcel src/app.html",
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "@fontsource/poppins": "^5.1.0",
