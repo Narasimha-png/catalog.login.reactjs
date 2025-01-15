@@ -1,5 +1,6 @@
 {
   "name": "catalogue",
+  "source":"src/app.html",
   "version": "1.0.0",
   "scripts": {
     "build": "parcel build src/app.html --out-dir dist",
