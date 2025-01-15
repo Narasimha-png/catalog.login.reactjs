@@ -3,9 +3,9 @@
   "source":"src/app.html",
   "version": "1.0.0",
   "scripts": {
-    "build": "parcel build src/app.html --out-dir dist",
-    "dev": "parcel src/app.html" ,
-    "predeploy": "npx parcel src/app.html",
+    "build": "parcel build",
+    "dev": "parcel" ,
+    "predeploy": "parcel",
     "deploy": "gh-pages -d build" 
   },
   "dependencies": {
