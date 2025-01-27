@@ -50,7 +50,7 @@ const SignUpCard = () =>{
             return;
         }
         
-        fetch("http://127.0.0.1:5000/api/v1/career/user/signup", {
+        fetch("https://loginmiddilewarenodejs-production.up.railway.app/api/v1/career/user/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
