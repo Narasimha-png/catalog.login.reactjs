@@ -50,21 +50,27 @@ const SignUpCard = () =>{
             return;
         }
         
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://127.0.0.1:5000/api/v1/career/user/signup");
-        xhr.setRequestHeader("Content-Type", "application/json");
-        const body = JSON.stringify(FormData);
-        xhr.send(body);
-        
-        xhr.onreadystatechange = () => {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    setResult("Valid User");
-                } else {
-                    setResult("Error Occurred: " + xhr.responseText); // Corrected typo here
-                }
+        fetch("http://127.0.0.1:5000/api/v1/career/user/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(FormData)
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json(); 
+            } else {
+                throw new Error('Error occurred: ' + response.statusText);
             }
-        };
+        })
+        .then(data => {
+            setResult("Valid User");
+        })
+        .catch(error => {
+            setResult(error.message);
+        });
+        
     }
     return(
     <div className="login-main-div">

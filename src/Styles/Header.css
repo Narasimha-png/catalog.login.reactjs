@@ -90,6 +90,9 @@ button{
     gap: 3vw;
   }
   .outer-nav{
+    background-color: white;
+    position: sticky;
+    top: 0px;
     padding: 0px 4vw;
     display: flex;
     align-items: center;
@@ -112,8 +115,12 @@ button{
     gap: 2vw;
   }
   .projects-page{
-    height: 90vh;
    
+    padding: 5vh 0px;
+    width: 99vw;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
     overflow: hidden;
 }
   .login-signup{
@@ -136,7 +143,7 @@ button{
   }
 
   .down-hover:hover{
-    border-bottom: 4px solid #4CFDCB ;
+    box-shadow: inset 0 -4px 0 #4CFDCB; 
   }
   .down-hover{
     height: 73.6px;
@@ -146,7 +153,7 @@ button{
   }
 
   .all-projects{
-    height: 20vh;
+  
     padding: 3vh 4vw;
    
 }
@@ -160,6 +167,11 @@ button{
   }
 
   @media (min-width:840px) and (max-width:950px) {
+    .projects-page{
+      position: relative;
+      z-index: 0;
+     
+    }
     .inner-nav{
       display: flex;
       gap: 10px;
@@ -177,6 +189,11 @@ button{
     
   }
   @media (min-width:750px) and (max-width:840px) {
+    .projects-page{
+      position: relative;
+      z-index: 0;
+     
+    }
     .inner-nav{
       display: flex;
       gap: 10px;
@@ -198,6 +215,11 @@ button{
   }
 
   @media (min-width:450px) and (max-width:750px) {
+    .projects-page{
+      position: relative;
+      z-index: 0;
+     
+    }
     .all-projects{
       padding: 3vw 0px;
     }
@@ -263,6 +285,11 @@ button{
   }
 
   @media (min-width:340px) and (max-width:450px) {
+    .projects-page{
+      position: relative;
+      z-index: 0;
+     
+    }
     .mobile-lang-nav{
       
       display: flex;
@@ -311,12 +338,8 @@ button{
       padding: 5px 15px;
       border: 1px solid black;
     }
-    .projects-page{
-      height: auto;
-    }
-    .all-projects{
-      height: auto;
-    }
+   
+    
     .empty-div{
       display: none;
     }
@@ -351,6 +374,8 @@ button{
   
 }
 .projects-page{
+  position: relative;
+  z-index: 0;
   height: auto;
 }
 .wallet-icon{
@@ -377,9 +402,7 @@ button{
 .login-signup{
   display: none;
 }
-.all-projects{
-  height: auto;
-}
+
 .empty-div{
   display: none;
 }

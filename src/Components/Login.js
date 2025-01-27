@@ -26,23 +26,33 @@ const LoginCard = () =>{
         console.log(FormData[name] ) ;
     }
     const HandleSignIn = async ()=>{
-        const xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-         xhr.open("POST" , "http://127.0.0.1:5000/api/v1/career/user/login"  ) ; 
-        xhr.setRequestHeader("Content-Type", "application/json");
-        const body = JSON.stringify(FormData) ;
-        console.log(body) ;
-        
-        xhr.send(body) ;
-        xhr.onreadystatechange = ()=>{
-            if( xhr.readyState == 4 ){
-                if( xhr.status == 200 ){
-                    setResult(xhr.responseText) ;
+        const body = JSON.stringify(FormData);
+
+        fetch("http://127.0.0.1:5000/api/v1/career/user/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            credentials: "include",
+            body: body,
+        })
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    return response.text().then((text) => {
+                        throw new Error(text);
+                    });
                 }
-                else 
-                setResult(xhr.responseText) ;
-            }
-        }
+            })
+            .then((data) => {
+                setResult(JSON.stringify(data));
+            })
+            .catch((error) => {
+                setResult(error.message);
+                console.error("Error:", error);
+            });
+        
     }
     const navigate = useNavigate() ;
     return(
