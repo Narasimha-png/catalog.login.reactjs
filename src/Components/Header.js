@@ -3,6 +3,7 @@ import logo from "../assets/cataloglogo__enhanced.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Projects from "./Projects.js";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Label = ({ name }) => <div className="poppins-semibold">{name}</div>;
 
@@ -130,8 +131,8 @@ const Login_SignUp = ({showNav , setShowNav , mediaSize}) => {
   <>
     {<Wallet />}
     <div className="login-signup mobile-login-signup">
-      <button className="log-in nav-btns">Log In</button>
-      <button className="sign-up nav-btns">Sign Up</button>
+      <Link to="/login" className="log-in nav-btns">Log In</Link>
+      <Link to="/signup" className="sign-up nav-btns">Sign Up</Link>
     </div>
     { !showNav && <Menu mediaSize={mediaSize} showNav={showNav} setShowNav= {setShowNav} />}
     {showNav && <Cancel showNav={showNav} setShowNav= {setShowNav} /> }
