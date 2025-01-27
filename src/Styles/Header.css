@@ -133,13 +133,14 @@ button{
     text-decoration: none;
     background-color: transparent;
     border: none;
+    text-wrap: nowrap;
     padding: 11px 3.5rem;
     border: 1.5px solid black;
     text-align: center;
   }
   .log-in:hover , .sign-up:hover{
     text-decoration: none;
-    
+
   }
  
   
