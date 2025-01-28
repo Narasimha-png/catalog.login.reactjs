@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 .heading-text{
     animation: backgroundtrans 1s 1;
     text-align: center;
@@ -14,9 +15,11 @@
     }
 }
 .login-heading-text{
+   
     padding: 3vh 0px ;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .poppins-extralight {
@@ -70,13 +73,18 @@
     font-style: normal;
   }
   .imp-text{
+   
+   
     color: #4CFDCB;
-    margin-left: 20px;
-}
+  }
+
 .login-main-div{
     border: 1px solid lightgrey;
+    border-radius: 20px;
+    background-color: white;
     display: flex;
     flex-direction: column;
+    
     gap: 5px;
     width:400px;
     padding: 2rem 2rem 3rem 2rem;
@@ -89,6 +97,7 @@
 }
 input{
     padding: 6px ;
+    
 }
 .log-btn{
     background-color: #4CFDCB;

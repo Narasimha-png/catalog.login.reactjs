@@ -28,6 +28,7 @@ const Projects = ({showProductNav , setProductNav}) =>(
     <>{
        
     }
+    <div className="center-projects">
     <div 
      className="projects-page">
     <div className="all-projects">
@@ -48,7 +49,7 @@ const Projects = ({showProductNav , setProductNav}) =>(
         
     }></div>
     </div>
-    
+    </div>
     </>
 )
 

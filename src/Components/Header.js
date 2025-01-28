@@ -141,9 +141,10 @@ const Login_SignUp = ({showNav , setShowNav , mediaSize}) => {
 }
 
 const Logo = () => (
-  <div className="nav-logo">
-    <img className="mainlogo" src={logo}></img>
-  </div>
+  <Link to="/" className="nav-logo">
+        
+  <img className="mainlogo" src={logo}></img>
+</Link>
 );
 
 function handleClick(showProductNav, setProductNav) {
