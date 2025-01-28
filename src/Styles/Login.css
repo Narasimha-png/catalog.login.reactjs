@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
 .heading-text{
     animation: backgroundtrans 1s 1;
     text-align: center;
@@ -74,8 +74,8 @@
   }
   .imp-text{
    
-   
-    color: #02b381;
+   margin-left: 5px;
+    color: #4CFDCB;
   }
 
 .login-main-div{

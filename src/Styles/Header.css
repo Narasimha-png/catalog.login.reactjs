@@ -188,6 +188,17 @@ button{
   }
 
   @media (min-width:840px) and (max-width:950px) {
+    .dynamic-text,
+    .static-text{
+      font-size: 40px;
+    }
+    .dynamic-text{
+      height: 60px;
+    }
+    .growth-icon{
+      width: 50px;
+      height: 50px;
+    }
     .projects-page{
       position: relative;
       background-color: transparent;
@@ -217,6 +228,17 @@ button{
       z-index: 0;
      
     }
+    .dynamic-text,
+    .static-text{
+      font-size: 40px;
+    }
+    .dynamic-text{
+      height: 60px;
+    }
+    .growth-icon{
+      width: 50px;
+      height: 50px;
+    }
     .inner-nav{
       display: flex;
       gap: 10px;
@@ -243,6 +265,17 @@ button{
       background-color: transparent;
       z-index: 0;
      
+    }
+    .dynamic-text,
+    .static-text{
+      font-size: 35px;
+    }
+    .dynamic-text{
+      height: 45px;
+    }
+    .growth-icon{
+      width: 35px;
+      height: 35px;
     }
     .all-projects{
       padding: 3vw 0px;
@@ -275,7 +308,7 @@ button{
       width: 200px;
     }
     .outer-nav{
-      padding: 10px;
+      padding: 17px;
     }
     .log-in, .sign-up{
       padding: 7px 2rem;
@@ -309,6 +342,17 @@ button{
   }
 
   @media (min-width:340px) and (max-width:450px) {
+    .dynamic-text,
+    .static-text{
+      font-size: 30px;
+    }
+    .dynamic-text{
+      height: 40px;
+    }
+    .growth-icon{
+      width: 30px;
+      height: 30px;
+    }
     .projects-page{
       position: relative;
       background-color: transparent;
@@ -347,7 +391,7 @@ button{
     }
   
     .outer-nav{
-      padding: 10px;
+      padding: 15px;
     }
     .log-in, .sign-up{
       padding: 10px 2rem;
@@ -375,6 +419,17 @@ button{
     
   }
 @media (max-width:340px) {
+  .dynamic-text,
+  .static-text{
+    font-size: 25px;
+  }
+  .dynamic-text{
+    height: 30px;
+  }
+  .growth-icon{
+    width: 25px;
+    height: 25px;
+  }
   .mobile-lang-nav{
       
     display: flex;
@@ -413,7 +468,7 @@ button{
   display: none;
 }
 .outer-nav{
-  padding: 10px;
+  padding: 15px;
 }
 .log-in, .sign-up{
   padding: 7px 2rem;

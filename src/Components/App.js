@@ -5,6 +5,7 @@ import {createBrowserRouter,Outlet,RouterProvider} from "react-router-dom" ;
 import Projects from "./Projects";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import Home from "./Home";
 const App = ()=>(
     <>
     <Header />
@@ -17,6 +18,10 @@ const route = createBrowserRouter([
         element:<App />,
         errorElement: <h1>Error Page</h1>,
         children:[
+            {
+                path:"/" , 
+                element:<Home />
+            },
             {
                 path:"/login", 
                 element:<Login />
