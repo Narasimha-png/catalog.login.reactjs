@@ -75,7 +75,7 @@
   .imp-text{
    
    
-    color: #4CFDCB;
+    color: #02b381;
   }
 
 .login-main-div{
@@ -90,6 +90,7 @@
     padding: 2rem 2rem 3rem 2rem;
 }
 .login-div{
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
