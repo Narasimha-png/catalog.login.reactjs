@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "../Styles/Home.css" ;
-import bitcoin from "../Assets/bitcoin.png" ;
+
 
 
 const Home = () =>{
