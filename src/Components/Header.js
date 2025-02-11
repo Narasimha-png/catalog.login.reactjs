@@ -166,7 +166,7 @@ const Nav_Links = ({ showProductNav, setProductNav, showNav , mediaSize }) => {
           display: showNav && "revert" ,
         }}
       >
-        <button className="nav-btns down-hover">
+        <button className="nav-btns down-hover disabled">
           {<Label name="Products" />}{" "}
           <span className="bi bi-chevron-down bi-nav"></span>
         </button>
@@ -185,10 +185,10 @@ const Nav_Links = ({ showProductNav, setProductNav, showNav , mediaSize }) => {
           <span className="bi bi-chevron-down bi-nav"></span>
         </button>
         {mobile_Projects&& mediaSize && (<Projects />)}
-        <button className="nav-btns down-hover">
+        <button className="nav-btns down-hover disabled">
           {<Label name="Pricing" />}
         </button>
-        <button className="nav-btns down-hover">{<Label name="Docs" />}</button>
+        <Link to="https://careercatalog.netlify.app/" className="nav-btns down-hover">{<Label name="Career" />}</Link>
       </div>
     </>
   );
