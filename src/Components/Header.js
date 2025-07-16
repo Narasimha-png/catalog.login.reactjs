@@ -112,7 +112,7 @@ const LangNav = ({toMobileScreen }) => {
     <div className="lang-nav mobile-lang-nav" style={{
         display:toMobileScreen && "flex"
     }}>
-      <button className="bi bi-globe bi-nav poppins-semibold nav-btns">
+      <button className="bi bi-globe bi-nav demo-commit poppins-semibold nav-btns">
         <Label name="EN" />
       </button>
       <button className="bi bi-brightness-high poppins-semibold nav-btns">
